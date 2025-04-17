@@ -19,7 +19,7 @@ h3 {
     text-align: center;
     font-size: 175%;
     font-weight: bold;
-    color: rgb(246, 161, 104);
+    color: rgb(253, 158, 41);
 }
 h4 {
     font-size: 120%;
@@ -32,16 +32,18 @@ form {
     align-items: center;
 }
 
-form>label {
-    font-size: 150%;
+div>label {
+    font-size: 120%;
 }
 
+
 form>div {
-    border-radius: 30px;
-    background-color: rgb(254, 244, 193);
+    border-radius: 40px;
+    background-color: rgba(254, 244, 193, 0.663);
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 30px;
+    padding: 10px;
 }
 
 form>div>p {
@@ -57,17 +59,17 @@ body{
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    background-color: blanchedalmond;
+    background-color: rgb(250, 221, 179);
 }
 nav>* {
     justify-content: space-between;
 }
 a {
-    font-size: 120%;
+    font-size: 140%;
     margin: 10px;
     border-radius: 5px;
     text-decoration: none;
-    color: rgb(249, 201, 7);
+    color: rgb(255, 179, 0);
     background-color: rgb(253, 252, 252);
 }
 
