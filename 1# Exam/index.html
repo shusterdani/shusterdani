@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Supermarket Products</title>
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadProducts()">
+    <h1>Online Supermarket Products</h1>
+
+    <form onsubmit="addProduct()" method="dialog">
+        <label for="nameBox">Product Name: </label>
+        <input type="text" id="nameBox" autocomplete="off" placeholder="Example: Cereal">
+        <br>
+        <label for="priceBox">Product Price: </label>
+        <input type="number" id="priceBox" autocomplete="off" placeholder="Example: 12" step=".01">
+        <br>
+        <label for="categorySelect">Select Category: </label>
+        <select name="Category" id="categorySelect">
+            <option value="hidden" selected disabled hidden>Select Category</option>
+            <option value="Drinks">Drinks</option>
+            <option value="Meat">Meat</option>
+            <option value="Diary">Diary</option>
+            <option value="Oats">Oats</option>
+            <option value="Snacks">Snacks</option>
+            <option value="Fruits">Fruits</option>
+            <option value="Basic">Basic</option>
+        </select>
+        <br>
+        <label for="urlBox">Enter Product Picture url: </label>
+        <input type="url" id="urlBox" autocomplete="off" placeholder="Example: https://yogurt.jpg">
+        <br>
+        <button>Add Product</button>
+    </form>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>Category</th>
+                <th>Product Picture</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="tbodyContainer"></tbody>
+    </table>
+    <hr>
+    <label class="infoLabel">Total Products: </label>
+    <span id="totalProducts">________</span>
+    <label class="infoLabel">Total Price: </label>
+    <span id="totalPrice">________</span>
+    <label class="infoLabel">Price Average: </label>
+    <span id="totalAverage">________</span>
+
+</body>
+</html>
+
