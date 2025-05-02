@@ -1,6 +1,6 @@
 body {
     font-family: monospace;
-    background-image: url(/assets/cork.jpg);
+    background-image: url(/todo_assets/cork.jpg);
     background-size: cover;
     background-repeat: repeat;
     background-position: center;
@@ -85,7 +85,7 @@ label {
     height: 250px;
     display: flex;
     flex-direction: column;
-    background-image: url(/assets/sticky-note.png);
+    background-image: url(/todo_assets/sticky-note.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
